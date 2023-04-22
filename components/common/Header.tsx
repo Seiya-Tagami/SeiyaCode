@@ -21,7 +21,11 @@ const Header = () => {
         <Flex as='header' py='4' justifyContent='space-between' alignItems='center'>
           <Link href='/' passHref>
             <Heading as='h1' fontSize='2xl' cursor='pointer'>
-              Seiya<Text as='span' color='green.600'>C</Text>ode
+              Seiya
+              <Text as='span' color='green.600'>
+                C
+              </Text>
+              ode
             </Heading>
           </Link>
           <Menu>
@@ -45,7 +49,7 @@ const Header = () => {
           </Menu>
         </Flex>
       </Container>
-    </Box >
+    </Box>
   )
 }
 

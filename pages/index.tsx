@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HomeContainer from 'components/Home/home.container'
 import Header from 'components/common/Header'
 
 export default function Home() {
@@ -11,9 +12,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <main>
-        <h1>Home</h1>
-      </main>
+      <HomeContainer />
     </>
   )
 }
