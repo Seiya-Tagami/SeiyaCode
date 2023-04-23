@@ -14,9 +14,9 @@ type WorksData = {
       title: string
       span: string
       desc: string
+      stacks: string
       img_path: string
       product_url: string
-      github_repo_url: string
     }[]
   }
 }
