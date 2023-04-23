@@ -39,7 +39,7 @@ const Header = () => {
               <Link href='/'>
                 <MenuItem>Home</MenuItem>
               </Link>
-              <Link href='/Works'>
+              <Link href='/works'>
                 <MenuItem>Works</MenuItem>
               </Link>
               <MenuItem>Open Closed Tab</MenuItem>
