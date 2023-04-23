@@ -26,7 +26,7 @@ const Works: FC<WorksData> = (props) => {
   return (
     <>
       <Container maxW='container.md' pt='20'>
-        <Hero data={data.hero} />
+        <Hero hero={data.hero} />
         <WorkList data={data.works} />
       </Container>
     </>
