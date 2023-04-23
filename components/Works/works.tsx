@@ -1,14 +1,23 @@
 import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
-import Hero from './partials/Hero'
+import Hero from '../common/Hero'
 import WorkList from './partials/WorkList'
 
-const Works: FC<any> = (props) => {
-  const {} = props
+type WorksData = {
+  data: {
+    hero: {
+      title: string
+      thumbnail: string
+    }
+  }
+}
+
+const Works: FC<WorksData> = (props) => {
+  const { data } = props
   return (
     <>
       <Container maxW='container.md' pt='20'>
-        <Hero />
+        <Hero data={data.hero} />
         <WorkList />
       </Container>
     </>

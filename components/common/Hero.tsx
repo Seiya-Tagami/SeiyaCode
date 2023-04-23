@@ -1,13 +1,22 @@
-import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import { Box, Flex, Heading } from '@chakra-ui/react'
 import Image from 'next/image'
-import React from 'react'
+import React, { FC } from 'react'
 
-const Hero = () => {
+type HeroProps = {
+  data: {
+    title: string
+    thumbnail: string
+  }
+}
+
+const Hero: FC<HeroProps> = (props) => {
+  const { data } = props
+  console.log(data)
   return (
     <Box w='full' h={['240px', '300px']} position='relative'>
       <Image
-        src='/works-hero.jpg'
-        alt='works'
+        src={data.thumbnail}
+        alt={data.title}
         fill={true}
         style={{ objectFit: 'cover' }}
         priority
@@ -22,7 +31,7 @@ const Hero = () => {
         pos='absolute'
       >
         <Heading as='h2' fontSize='4xl'>
-          Works
+          {data.title}
         </Heading>
       </Flex>
     </Box>
