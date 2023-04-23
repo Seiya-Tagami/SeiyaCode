@@ -5,7 +5,13 @@ import React from 'react'
 const Hero = () => {
   return (
     <Box w='full' h={['240px', '300px']} position='relative'>
-      <Image src='/works-hero.jpg' alt='works' fill={true} style={{ objectFit: 'cover' }} priority />
+      <Image
+        src='/works-hero.jpg'
+        alt='works'
+        fill={true}
+        style={{ objectFit: 'cover' }}
+        priority
+      />
       <Flex
         w='full'
         h='full'

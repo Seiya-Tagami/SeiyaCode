@@ -4,7 +4,7 @@ import Hero from './partials/Hero'
 import WorkList from './partials/WorkList'
 
 const Works: FC<any> = (props) => {
-  const { } = props
+  const {} = props
   return (
     <>
       <Container maxW='container.md' pt='20'>

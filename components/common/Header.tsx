@@ -16,7 +16,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <Box px={4} bgColor='gray.200' position='fixed' top='0' right='0' left='0' zIndex='1000'>
+    <Box px={4} bgColor='gray.100' position='fixed' top='0' right='0' left='0' zIndex='1000'>
       <Container maxW='container.md'>
         <Flex as='header' py='4' justifyContent='space-between' alignItems='center'>
           <Link href='/' passHref>
@@ -31,10 +31,9 @@ const Header = () => {
           <Menu>
             <MenuButton
               as={IconButton}
-              aria-label='Options'
               icon={<HamburgerIcon />}
               variant='outline'
-              outlineColor='gray.300'
+              aria-label='Options'
             />
             <MenuList>
               <Link href='/'>
