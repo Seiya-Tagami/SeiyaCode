@@ -18,6 +18,7 @@ const Hero: FC<HeroProps> = (props) => {
         src={data.thumbnail}
         alt={data.title}
         fill={true}
+        sizes='100%'
         style={{ objectFit: 'cover' }}
         priority
       />

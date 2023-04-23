@@ -17,7 +17,7 @@ type WorkListProps = {
 const WorkList: FC<WorkListProps> = (props) => {
   const { data } = props
   return (
-    <Grid gridTemplateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)']} gridGap={12} mt={14}>
+    <Grid gridTemplateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)']} gridGap={10} mt={20}>
       {data.map((d) => (
         <WorkCard data={d} key={d.id} />
       ))}
