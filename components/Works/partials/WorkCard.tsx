@@ -1,29 +1,43 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Box, Card, Flex, GridItem, Heading, Link, Text } from '@chakra-ui/react'
-import React from 'react'
+import Image from 'next/image'
+import React, { FC } from 'react'
 
-const WorkCard = () => {
+type WorkCardProps = {
+  data: {
+    id: string
+    title: string
+    span: string
+    desc: string
+    stacks: string
+    img_path: string
+    product_url: string
+  }
+}
+
+const WorkCard: FC<WorkCardProps> = (props) => {
+  const { data } = props
   return (
     <GridItem w='90%' mx='auto'>
-      <Card w='full' h={200} bg='gray.500'></Card>
+      <Card w='full' h={200} overflow="hidden">
+        {data.img_path ?
+          (<Image src={data.img_path} alt={data.title} fill={true} />) : (<Image src='/noImage.png' alt='noImage' fill={true} />)
+        }
+      </Card>
       <Flex direction='column' gap='1.5' p='1.5'>
         <Flex justify='space-between' align='center'>
           <Heading as='h3' size='md'>
-            title
+            {data.title}
           </Heading>
-          <Text>制作期間 2022/03~04</Text>
+          <Text fontSize='sm'>制作期間 {data.span}</Text>
         </Flex>
-        <Text>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui vel in eius beatae provident
-          perspiciatis ad incidunt itaque harum corporis commodi pariatur suscipit saepe aut, facere
-          eos quae amet enim!
-        </Text>
-        <Link color='teal.500' ml='auto' href='https://www.google.com/' isExternal>
+        <Text fontSize='sm'>{data.desc}</Text>
+        <Flex fontSize='sm' justify='space-between' color='purple.500'>
+          <Text>技術スタック</Text>
+          <Text>{data.stacks}</Text>
+        </Flex>
+        <Link color='teal.500' ml='auto' href={data.product_url} isExternal>
           Check the product
-          <ExternalLinkIcon mx='2px' />
-        </Link>
-        <Link color='teal.500' ml='auto' href='https://www.google.com/' isExternal>
-          Go to github repository
           <ExternalLinkIcon mx='2px' />
         </Link>
       </Flex>

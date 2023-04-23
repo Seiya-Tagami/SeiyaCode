@@ -9,6 +9,15 @@ type WorksData = {
       title: string
       thumbnail: string
     }
+    works: {
+      id: string
+      title: string
+      span: string
+      desc: string
+      img_path: string
+      product_url: string
+      github_repo_url: string
+    }[]
   }
 }
 
@@ -18,7 +27,7 @@ const Works: FC<WorksData> = (props) => {
     <>
       <Container maxW='container.md' pt='20'>
         <Hero data={data.hero} />
-        <WorkList />
+        <WorkList data={data.works} />
       </Container>
     </>
   )

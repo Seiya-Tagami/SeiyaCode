@@ -1,14 +1,26 @@
 import { Grid } from '@chakra-ui/react'
-import React from 'react'
+import React, { FC } from 'react'
 import WorkCard from './WorkCard'
 
-const WorkList = () => {
+type WorkListProps = {
+  data: {
+    id: string
+    title: string
+    span: string
+    desc: string
+    stacks: string
+    img_path: string
+    product_url: string
+  }[]
+}
+
+const WorkList: FC<WorkListProps> = (props) => {
+  const { data } = props
   return (
     <Grid gridTemplateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)']} gridGap={12} mt={14}>
-      <WorkCard />
-      <WorkCard />
-      <WorkCard />
-      <WorkCard />
+      {data.map((d) => (
+        <WorkCard data={d} key={d.id} />
+      ))}
     </Grid>
   )
 }
