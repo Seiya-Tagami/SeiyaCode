@@ -1,7 +1,7 @@
 export const WORKS_DATA = {
   hero: {
     title: 'Works',
-    thumbnail: '/works-hero.jpg',
+    thumbnail: '/heros/works.jpg',
   },
   works: [
     {
@@ -19,7 +19,7 @@ export const WORKS_DATA = {
       span: '2023/03~04',
       desc: '説明です。',
       stacks: 'Vue, Pinia, TypeScript',
-      img_path: '/workcards/simple-memo.png',
+      img_path: '/workCards/simple-memo.png',
       product_url: 'https://simple-memo-oa93ktfxi-seiya-tagami.vercel.app/',
     },
     {

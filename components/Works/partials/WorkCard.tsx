@@ -19,10 +19,12 @@ const WorkCard: FC<WorkCardProps> = (props) => {
   const { data } = props
   return (
     <GridItem w='90%' mx='auto'>
-      <Card w='full' h={200} overflow="hidden">
-        {data.img_path ?
-          (<Image src={data.img_path} alt={data.title} fill={true} />) : (<Image src='/noImage.png' alt='noImage' fill={true} />)
-        }
+      <Card w='full' h={200} overflow='hidden'>
+        {data.img_path ? (
+          <Image src={data.img_path} alt={data.title} fill={true} />
+        ) : (
+          <Image src='/noImage.png' alt='noImage' fill={true} />
+        )}
       </Card>
       <Flex direction='column' gap='1.5' p='1.5'>
         <Flex justify='space-between' align='center'>
