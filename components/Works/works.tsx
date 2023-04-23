@@ -7,7 +7,7 @@ const Works: FC<any> = (props) => {
   const { } = props
   return (
     <>
-      <Container maxW='container.md' pt='24'>
+      <Container maxW='container.md' pt='20'>
         <Hero />
         <WorkList />
       </Container>
