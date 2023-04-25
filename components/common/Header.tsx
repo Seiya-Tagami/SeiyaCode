@@ -42,7 +42,9 @@ const Header = () => {
               <Link href='/works'>
                 <MenuItem>Works</MenuItem>
               </Link>
-              <MenuItem>Open Closed Tab</MenuItem>
+              <Link href='/hobby'>
+                <MenuItem>Hobby</MenuItem>
+              </Link>
               <MenuItem>Open File...</MenuItem>
             </MenuList>
           </Menu>
