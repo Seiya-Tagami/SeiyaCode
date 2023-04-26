@@ -1,12 +1,20 @@
 import { Container } from '@chakra-ui/react'
-import React from 'react'
+import React, { FC } from 'react'
 import Hero from 'components/common/Hero'
 
-const Hobby = (props: any) => {
-  const { } = props;
+type HobbyData = {
+  data: {
+    hero: {
+      title: string
+      thumbnail: string
+    }
+  }
+}
+const Hobby: FC<HobbyData> = (props) => {
+  const { data } = props;
   return (
     <Container maxW='container.md' pt='20'>
-      {/* <Hero hero={ } /> */}
+      <Hero hero={data.hero} />
     </Container>
   )
 }
