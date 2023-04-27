@@ -1,3 +1,4 @@
+import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
 import Hero from 'components/common/Hero'
 
@@ -12,9 +13,9 @@ type PostsData = {
 const Posts: FC<PostsData> = (props) => {
   const { data } = props
   return (
-    <>
+    <Container maxW='container.md' pt='20'>
       <Hero hero={data.hero} />
-    </>
+    </Container>
   )
 }
 

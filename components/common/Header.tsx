@@ -42,6 +42,9 @@ const Header = () => {
               <Link href='/works'>
                 <MenuItem>Works</MenuItem>
               </Link>
+              <Link href='/posts'>
+                <MenuItem>Posts</MenuItem>
+              </Link>
               <Link href='/hobby'>
                 <MenuItem>Hobby</MenuItem>
               </Link>
