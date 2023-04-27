@@ -45,9 +45,6 @@ const Header = () => {
               <Link href='/posts'>
                 <MenuItem>Posts</MenuItem>
               </Link>
-              <Link href='/hobby'>
-                <MenuItem>Hobby</MenuItem>
-              </Link>
               <a href='https://github.com/Seiya-Tagami' target='_blank' rel='noopener noreferrer'>
                 <MenuItem>My Github</MenuItem>
               </a>
