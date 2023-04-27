@@ -1,8 +1,7 @@
-import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
 import Hero from 'components/common/Hero'
 
-type HobbyData = {
+type PostsData = {
   data: {
     hero: {
       title: string
@@ -10,13 +9,13 @@ type HobbyData = {
     }
   }
 }
-const Hobby: FC<HobbyData> = (props) => {
+const Posts: FC<PostsData> = (props) => {
   const { data } = props
   return (
-    <Container maxW='container.md' pt='20'>
+    <>
       <Hero hero={data.hero} />
-    </Container>
+    </>
   )
 }
 
-export default Hobby
+export default Posts

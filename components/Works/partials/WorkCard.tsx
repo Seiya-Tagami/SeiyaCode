@@ -23,7 +23,14 @@ const WorkCard: FC<WorkCardProps> = (props) => {
         {data.img_path ? (
           <Image src={data.img_path} alt={data.title} fill={true} sizes='100%' priority />
         ) : (
-          <Image src='/noImage.png' alt='noImage' fill={true} style={{ objectFit: "cover" }} sizes='100%' priority />
+          <Image
+            src='/noImage.png'
+            alt='noImage'
+            fill={true}
+            style={{ objectFit: 'cover' }}
+            sizes='100%'
+            priority
+          />
         )}
       </Card>
       <Flex direction='column' gap='2' p='1.5'>
@@ -38,10 +45,14 @@ const WorkCard: FC<WorkCardProps> = (props) => {
           <Text>技術スタック</Text>
           <Text>{data.stacks}</Text>
         </Flex>
-        {data.product_url !== "#" ? (<Link color='teal.500' ml='auto' href={data.product_url} isExternal >
-          Check the product
-          <ExternalLinkIcon mx='2px' />
-        </Link>) : ""}
+        {data.product_url !== '#' ? (
+          <Link color='teal.500' ml='auto' href={data.product_url} isExternal>
+            Check the product
+            <ExternalLinkIcon mx='2px' />
+          </Link>
+        ) : (
+          ''
+        )}
       </Flex>
     </GridItem>
   )

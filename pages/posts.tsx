@@ -1,16 +1,16 @@
 import React from 'react'
-import HobbyContainer from 'components/Hobby/hobby.container'
+import PostsContainer from 'components/Posts/posts.container'
 import Footer from 'components/common/Footer'
 import Header from 'components/common/Header'
 
-const Hobby = () => {
+const Works = () => {
   return (
     <>
       <Header />
-      <HobbyContainer />
+      <PostsContainer />
       <Footer />
     </>
   )
 }
 
-export default Hobby
+export default Works
