@@ -5,7 +5,7 @@ import React from 'react'
 const Post = () => {
   return (
     <Card w='full' p='6'>
-      <Link color='teal.500' href="#" isExternal>
+      <Link color='teal.500' href='#' isExternal>
         xxxxxxxxxxxxxxxxxxxxxxxxxxx
         <ExternalLinkIcon mx='2px' />
       </Link>
