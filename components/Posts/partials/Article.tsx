@@ -12,6 +12,7 @@ const Article: FC<ArticleProps> = (props) => {
     <Card w='full' p='6'>
       <Link
         display='flex'
+        alignItems='center'
         justifyContent={['space-between', 'flex-start']}
         gap={['0', '40px']}
         color='teal.500'

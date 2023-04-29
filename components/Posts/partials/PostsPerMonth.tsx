@@ -9,8 +9,8 @@ type PostsPerMonthProps = {
 const PostsPerMonth: FC<PostsPerMonthProps> = (props) => {
   const { post } = props
   return (
-    <Box>
-      <Heading as='h2' fontSize='2xl'>
+    <Box mt='4'>
+      <Heading as='h2' fontSize='2xl' fontStyle='italic'>
         {post.month}
       </Heading>
       <VStack w='full' mt='4'>
