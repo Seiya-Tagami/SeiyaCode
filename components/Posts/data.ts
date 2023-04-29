@@ -3,4 +3,17 @@ export const POSTS_DATA = {
     title: 'Posts',
     thumbnail: '/heros/posts.jpg',
   },
+  posts: [
+    {
+      month: '2023/04',
+      articles: [
+        {
+          id: '1',
+          title: 'Vueでメモアプリを作ってみた話',
+          page: 'Qiita',
+          url: 'https://qiita.com/sunupppi/items/aa4c21566737ed881c88'
+        }
+      ]
+    }
+  ]
 }

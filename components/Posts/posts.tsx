@@ -8,7 +8,18 @@ type PostsData = {
     hero: {
       title: string
       thumbnail: string
-    }
+    },
+    posts:
+    {
+      month: string
+      articles:
+      {
+        id: string
+        title: string
+        page: string
+        url: string
+      }[]
+    }[]
   }
 }
 const Posts: FC<PostsData> = (props) => {
@@ -16,7 +27,7 @@ const Posts: FC<PostsData> = (props) => {
   return (
     <Container maxW='container.md' pt='20'>
       <Hero hero={data.hero} />
-      <PostsList />
+      <PostsList posts={data.posts} />
     </Container>
   )
 }

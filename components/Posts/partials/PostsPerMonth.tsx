@@ -1,17 +1,30 @@
 import { Box, Heading, VStack } from '@chakra-ui/react'
-import React from 'react'
-import Post from './Post'
+import React, { FC } from 'react'
+import Article from './Article'
 
-const PostsPerMonth = () => {
+type PostsPerMonthProps = {
+  post: {
+    month: string,
+    articles:
+    {
+      id: string,
+      title: string,
+      page: string,
+      url: string
+    }[]
+  }
+}
+const PostsPerMonth: FC<PostsPerMonthProps> = (props) => {
+  const { post } = props;
   return (
     <Box>
       <Heading as='h2' fontSize='2xl'>
-        2023/05
+        {post.month}
       </Heading>
       <VStack w='full' mt='4'>
-        <Post />
-        <Post />
-        <Post />
+        {post.articles.map(a => (
+          <Article content={a} key={a.id} />
+        ))}
       </VStack>
     </Box>
   )
