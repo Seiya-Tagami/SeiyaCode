@@ -11,9 +11,9 @@ export const POSTS_DATA = {
           id: '1',
           title: 'Vueでメモアプリを作ってみた話',
           page: 'Qiita',
-          url: 'https://qiita.com/sunupppi/items/aa4c21566737ed881c88'
-        }
-      ]
-    }
-  ]
+          url: 'https://qiita.com/sunupppi/items/aa4c21566737ed881c88',
+        },
+      ],
+    },
+  ],
 }

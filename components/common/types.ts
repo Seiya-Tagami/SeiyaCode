@@ -1,6 +1,4 @@
-export type HeroProps = {
-  hero: {
-    title: string
-    thumbnail: string
-  }
+export type THero = {
+  title: string
+  thumbnail: string
 }

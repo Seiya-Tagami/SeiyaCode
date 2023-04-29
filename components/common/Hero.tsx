@@ -1,7 +1,11 @@
 import { Box, Flex, Heading } from '@chakra-ui/react'
 import Image from 'next/image'
 import React, { FC } from 'react'
-import { HeroProps } from './types'
+import { THero } from './types'
+
+type HeroProps = {
+  hero: THero
+}
 
 const Hero: FC<HeroProps> = (props) => {
   const { hero } = props

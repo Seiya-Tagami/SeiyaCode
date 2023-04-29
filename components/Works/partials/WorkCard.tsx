@@ -1,18 +1,11 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Box, Card, Flex, GridItem, Heading, Link, Text } from '@chakra-ui/react'
+import { Card, Flex, GridItem, Heading, Link, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import React, { FC } from 'react'
+import { TWork } from '../types'
 
 type WorkCardProps = {
-  data: {
-    id: string
-    title: string
-    span: string
-    desc: string
-    stacks: string
-    img_path: string
-    product_url: string
-  }
+  data: TWork
 }
 
 const WorkCard: FC<WorkCardProps> = (props) => {
