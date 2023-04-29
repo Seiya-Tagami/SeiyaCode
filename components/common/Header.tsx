@@ -36,13 +36,13 @@ const Header = () => {
               aria-label='Options'
             />
             <MenuList>
-              <Link href='/'>
+              <Link href='/' scroll={false}>
                 <MenuItem>Home</MenuItem>
               </Link>
-              <Link href='/works'>
+              <Link href='/works' scroll={false}>
                 <MenuItem>Works</MenuItem>
               </Link>
-              <Link href='/posts'>
+              <Link href='/posts' scroll={false}>
                 <MenuItem>Posts</MenuItem>
               </Link>
               <a href='https://github.com/Seiya-Tagami' target='_blank' rel='noopener noreferrer'>

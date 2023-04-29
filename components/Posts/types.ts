@@ -1,4 +1,4 @@
-import { THero } from "components/common/types"
+import { THero } from 'components/common/types'
 
 export type TPost = {
   month: string
@@ -13,6 +13,6 @@ export type TArticle = {
 }
 
 export type PostsData = {
-  hero: THero,
+  hero: THero
   posts: TPost[]
 }

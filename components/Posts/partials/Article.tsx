@@ -13,8 +13,7 @@ const Article: FC<ArticleProps> = (props) => {
       <Link
         display='flex'
         alignItems='center'
-        justifyContent={['space-between', 'flex-start']}
-        gap={['0', '40px']}
+        gap={['28px', '40px']}
         color='teal.500'
         href={content.url}
         isExternal

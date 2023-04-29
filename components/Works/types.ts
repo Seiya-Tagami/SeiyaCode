@@ -1,4 +1,4 @@
-import { THero } from "components/common/types"
+import { THero } from 'components/common/types'
 
 export type TWork = {
   id: string
@@ -11,6 +11,6 @@ export type TWork = {
 }
 
 export type WorksData = {
-  hero: THero,
+  hero: THero
   works: TWork[]
 }

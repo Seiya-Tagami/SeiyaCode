@@ -1,21 +1,13 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
+import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from 'next/app'
 
-const theme = extendTheme({
-  colors: {
-    header: {
-      default: '#ded2b9',
-    },
-    main: {
-      default: '#EBE0CB',
-    },
-  },
-})
-
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <AnimatePresence mode='wait' onExitComplete={() => window.scrollTo(0, 0)}>
+      <ChakraProvider>
+        <Component key={router.asPath} {...pageProps} />
+      </ChakraProvider>
+    </AnimatePresence>
   )
 }
