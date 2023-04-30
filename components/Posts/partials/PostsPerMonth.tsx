@@ -10,7 +10,7 @@ const PostsPerMonth: FC<PostsPerMonthProps> = (props) => {
   const { post } = props
   return (
     <Box mt='4'>
-      <Heading as='h2' fontSize='2xl' fontStyle='italic'>
+      <Heading as='h2' fontSize='xl' fontStyle='italic'>
         {post.month}
       </Heading>
       <VStack w='full' mt='4'>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import HomeContainer from 'components/Home/home.container'
+import Footer from 'components/common/Footer'
 import Header from 'components/common/Header'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       >
         <HomeContainer />
       </motion.div>
+      <Footer />
     </>
   )
 }

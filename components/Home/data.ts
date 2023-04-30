@@ -1,6 +1,6 @@
 export const HOME_DATA = {
   hero: {
-    title: '',
-    thumbnail: '',
+    title: 'Seiya:Code',
+    thumbnail: '/heros/home.jpg',
   },
 }

@@ -18,8 +18,9 @@ const Article: FC<ArticleProps> = (props) => {
         href={content.url}
         isExternal
       >
-
-        <Badge bg="green.400" color='white' fontSize='16' p={1}>{content.media}</Badge>
+        <Badge bg='green.400' color='white' fontSize='16' p={1}>
+          {content.media}
+        </Badge>
         <Text as={'span'}>
           {content.title}
           <ExternalLinkIcon mx='2px' />
