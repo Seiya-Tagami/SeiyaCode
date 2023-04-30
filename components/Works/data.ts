@@ -1,0 +1,53 @@
+export const WORKS_DATA = {
+  hero: {
+    title: 'Works',
+    thumbnail: '/heros/works.jpg',
+  },
+  works: [
+    {
+      id: '1',
+      title: 'portfolio',
+      span: '2023/04~05',
+      desc: '説明です。',
+      stacks: 'Next.js, TypeScript, Chakra UI',
+      img_path: '',
+      product_url: '/',
+    },
+    {
+      id: '2',
+      title: 'Simple Memo',
+      span: '2023/03~04',
+      desc: '確かに昨今の高機能なタスク管理アプリは良いかもしれない。けれど、やっぱりシンプルで直感的な操作ができれば私はそれで満足なのです。',
+      stacks: 'Vue, Pinia, TypeScript',
+      img_path: '/workCards/simple-memo.png',
+      product_url: 'https://simple-memo.vercel.app/',
+    },
+    {
+      id: '3',
+      title: 'Memory Game',
+      span: '2022/07~08',
+      desc: 'ドットインストールで学んだことを活かしつつ、自分なりに和風なテイストを加え作成した、神経衰弱ゲームアプリです。',
+      stacks: 'Vanilla JS, SCSS',
+      img_path: '/workCards/memorygame.png',
+      product_url: '#',
+    },
+    {
+      id: '4',
+      title: 'POSSE webapp',
+      span: '2022/09~12',
+      desc: '大学生プログラミング学習コミュニティ内で制作した学習管理アプリケーションです。',
+      stacks: 'Vanilla JS, Chart.js, PHP, SCSS',
+      img_path: '/workCards/p-webapp.png',
+      product_url: '#',
+    },
+    {
+      id: '5',
+      title: 'POSSE website',
+      span: '2022/06~12',
+      desc: '大学生プログラミング学習コミュニティ内で制作したコミュニティ紹介サイトです。',
+      stacks: 'Vanilla JS, PHP, SCSS',
+      img_path: '/workCards/p-website.png',
+      product_url: '#',
+    },
+  ],
+}
