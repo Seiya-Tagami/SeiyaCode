@@ -1,4 +1,4 @@
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
   Text,
   Box,
@@ -46,7 +46,10 @@ const Header = () => {
                 <MenuItem>Posts</MenuItem>
               </Link>
               <a href='https://github.com/Seiya-Tagami' target='_blank' rel='noopener noreferrer'>
-                <MenuItem>My Github</MenuItem>
+                <MenuItem>
+                  My Github
+                  <ExternalLinkIcon ml='2' />
+                </MenuItem>
               </a>
             </MenuList>
           </Menu>

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Head from 'next/head'
 import HomeContainer from 'components/Home/home.container'
 import Header from 'components/common/Header'
@@ -12,7 +13,14 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <HomeContainer />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: 'easeOut', duration: 0.6 }}
+      >
+        <HomeContainer />
+      </motion.div>
     </>
   )
 }

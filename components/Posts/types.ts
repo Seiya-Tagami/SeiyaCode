@@ -8,7 +8,7 @@ export type TPost = {
 export type TArticle = {
   id: string
   title: string
-  page: string
+  media: string
   url: string
 }
 

@@ -1,5 +1,5 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Card, Link, Text } from '@chakra-ui/react'
+import { Badge, Card, Link, Text } from '@chakra-ui/react'
 import React, { FC } from 'react'
 import { TArticle } from '../types'
 
@@ -18,9 +18,8 @@ const Article: FC<ArticleProps> = (props) => {
         href={content.url}
         isExternal
       >
-        <Text as={'span'} bg={'green.400'} p={1} borderRadius={6} color='white' fontWeight='bold'>
-          {content.page}
-        </Text>
+
+        <Badge bg="green.400" color='white' fontSize='16' p={1}>{content.media}</Badge>
         <Text as={'span'}>
           {content.title}
           <ExternalLinkIcon mx='2px' />
