@@ -28,7 +28,7 @@ const About = () => {
             <Link>#Graph QL</Link>
             <Link>#Nest.js</Link>
           </Flex>
-          <Text mt='6'>最近、著作権法の領域に興味があります～</Text>
+          <Text mt='6'>今日も１日がんばるぞい{'＼(-o-)／'}</Text>
         </Box>
       </Flex>
     </Box>
