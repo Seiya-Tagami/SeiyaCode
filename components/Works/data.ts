@@ -10,7 +10,7 @@ export const WORKS_DATA = {
       span: '2023/04~05',
       desc: '説明です。',
       stacks: 'Next.js, TypeScript, Chakra UI',
-      img_path: '',
+      img_path: '/workCards/seiyaCode.png',
       product_url: '/',
     },
     {

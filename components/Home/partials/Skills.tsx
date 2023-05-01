@@ -8,8 +8,9 @@ const Skills: FC<SkillsProps> = (props) => {
   const { skills } = props;
   return (
     <Box mt={12}>
-      <Heading as='h2' fontSize='2xl' textDecorationLine='underline'>
+      <Heading as='h2' fontSize='2xl'>
         Skills
+        <Box bg={'gray.300'} w={16} h={1}></Box>
       </Heading>
       <SimpleGrid mt={8} spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
         {skills.map((skill) => (

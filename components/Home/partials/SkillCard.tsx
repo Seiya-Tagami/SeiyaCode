@@ -9,7 +9,7 @@ const SkillCard: FC<SkillCardProps> = (props) => {
   return (
     <Card key={title} w={['90%', 'auto']} mx={'auto'}>
       <CardHeader>
-        <Heading size='md'>{title}</Heading>
+        <Heading size='md' maxW='180'>{title}</Heading>
       </CardHeader>
       <CardBody>
         <Box pos='relative' w='180px' h='160px' mx='auto'>

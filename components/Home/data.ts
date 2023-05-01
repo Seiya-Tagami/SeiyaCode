@@ -20,7 +20,7 @@ export const HOME_DATA = {
       alt: "onceIHaveUsed"
     },
     {
-      title: "I want to learn near future",
+      title: "I wanna learn near future",
       imgPath: "https://skillicons.dev/icons?i=rust,flutter,django,dotnet,postgres,aws,azure&perline=3",
       alt: "nearFuture"
     },

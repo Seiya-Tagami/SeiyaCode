@@ -5,8 +5,9 @@ import React from 'react'
 const About = () => {
   return (
     <Box mt={12}>
-      <Heading as='h2' fontSize='2xl' textDecorationLine='underline'>
+      <Heading as='h2' fontSize='2xl'>
         About
+        <Box bg={'gray.300'} w={20} h={1}></Box>
       </Heading>
       <Flex
         width='90%'
@@ -28,7 +29,7 @@ const About = () => {
             <Link>#Graph QL</Link>
             <Link>#Nest.js</Link>
           </Flex>
-          <Text mt='6'>最近、著作権法の領域に興味があります～</Text>
+          <Text mt='6'>今日も１日がんばるぞい{'＼(-o-)／'}</Text>
         </Box>
       </Flex>
     </Box>

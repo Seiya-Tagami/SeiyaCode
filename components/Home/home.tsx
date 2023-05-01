@@ -1,10 +1,13 @@
 import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
 import About from './partials/About'
-import Hobby from './partials/Hobby'
+import History from './partials/History'
 import Skills from './partials/Skills'
 import { HomeData } from './types'
+import FooterNav from 'components/common/FooterNav'
 import Hero from 'components/common/Hero'
+
+
 
 const Home: FC<HomeData> = (props) => {
   const { hero, skills } = props
@@ -12,8 +15,9 @@ const Home: FC<HomeData> = (props) => {
     <Container maxW='container.md' pt='20'>
       <Hero hero={hero} />
       <About />
-      {/* <Hobby /> */}
+      <History />
       <Skills skills={skills} />
+      <FooterNav />
     </Container>
   )
 }
