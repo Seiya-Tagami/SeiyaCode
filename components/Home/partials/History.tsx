@@ -25,7 +25,7 @@ const History = () => {
         </ListItem>
         <ListItem>
           <ListIcon as={CheckCircleIcon} color='green.500' />
-          2023年3月、もっとレベルアップをするため、エンジニアインターンに応募
+          2023年3月、もっとレベルアップをするため、エンジニア長期インターンに応募
         </ListItem>
         <ListItem>
           <ListIcon as={SpinnerIcon} color='green.500' />

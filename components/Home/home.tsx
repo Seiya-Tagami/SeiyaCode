@@ -4,7 +4,10 @@ import About from './partials/About'
 import History from './partials/History'
 import Skills from './partials/Skills'
 import { HomeData } from './types'
+import FooterNav from 'components/common/FooterNav'
 import Hero from 'components/common/Hero'
+
+
 
 const Home: FC<HomeData> = (props) => {
   const { hero, skills } = props
@@ -14,6 +17,7 @@ const Home: FC<HomeData> = (props) => {
       <About />
       <History />
       <Skills skills={skills} />
+      <FooterNav />
     </Container>
   )
 }
