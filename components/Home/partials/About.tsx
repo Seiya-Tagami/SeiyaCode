@@ -5,8 +5,9 @@ import React from 'react'
 const About = () => {
   return (
     <Box mt={12}>
-      <Heading as='h2' fontSize='2xl' textDecorationLine='underline'>
+      <Heading as='h2' fontSize='2xl'>
         About
+        <Box bg={'gray.300'} w={20} h={1}></Box>
       </Heading>
       <Flex
         width='90%'

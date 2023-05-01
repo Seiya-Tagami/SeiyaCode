@@ -6,8 +6,9 @@ import React from 'react'
 const History = () => {
   return (
     <Box mt={12}>
-      <Heading as='h2' fontSize='2xl' textDecorationLine='underline'>
+      <Heading as='h2' fontSize='2xl'>
         What I have done
+        <Box bg={'gray.300'} w={52} h={1}></Box>
       </Heading>
       <List spacing={3} mt={4}>
         <ListItem>
