@@ -1,5 +1,5 @@
 
-import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Container, Flex, Link } from '@chakra-ui/react'
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react'
 import React from 'react'
 
 const FooterNav = () => {
@@ -13,7 +13,7 @@ const FooterNav = () => {
         <BreadcrumbLink href='/works'>Works</BreadcrumbLink>
       </BreadcrumbItem>
 
-      <BreadcrumbItem isCurrentPage>
+      <BreadcrumbItem>
         <BreadcrumbLink href='/posts'>Posts</BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>
