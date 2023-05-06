@@ -3,13 +3,15 @@ import Image from 'next/image'
 import React, { FC } from 'react'
 import { TSkill } from '../types'
 
-type SkillCardProps = TSkill;
+type SkillCardProps = TSkill
 const SkillCard: FC<SkillCardProps> = (props) => {
-  const { title, imgPath, alt } = props;
+  const { title, imgPath, alt } = props
   return (
     <Card key={title} w={['90%', 'auto']} mx={'auto'}>
       <CardHeader>
-        <Heading size='md' maxW='180'>{title}</Heading>
+        <Heading size='md' maxW='180'>
+          {title}
+        </Heading>
       </CardHeader>
       <CardBody>
         <Box pos='relative' w='180px' h='160px' mx='auto'>

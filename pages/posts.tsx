@@ -8,7 +8,7 @@ import Meta from 'components/common/Meta'
 const Works = () => {
   return (
     <>
-      <Meta title='Posts' />
+      <Meta title='Posts' description='This is posts page.' />
       <Header />
       <motion.div
         initial={{ opacity: 0 }}

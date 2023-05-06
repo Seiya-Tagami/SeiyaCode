@@ -4,7 +4,7 @@ import { HomeData } from '../types'
 
 type HistoryProps = Omit<HomeData, 'hero' | 'skills'>
 const History: FC<HistoryProps> = (props) => {
-  const { history } = props;
+  const { history } = props
   return (
     <Box mt={12}>
       <Heading as='h2' fontSize='2xl'>
@@ -13,7 +13,7 @@ const History: FC<HistoryProps> = (props) => {
       </Heading>
       <List spacing={3} mt={4}>
         {history.map((h) => (
-          <ListItem key={h.date} display={"flex"} alignItems={"center"}>
+          <ListItem key={h.date} display={'flex'} alignItems={'center'}>
             <ListIcon as={h.icon} color='green.500' />
             {h.date}、{h.text}
           </ListItem>

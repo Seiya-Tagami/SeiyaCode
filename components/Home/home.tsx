@@ -7,8 +7,6 @@ import { HomeData } from './types'
 import FooterNav from 'components/common/FooterNav'
 import Hero from 'components/common/Hero'
 
-
-
 const Home: FC<HomeData> = (props) => {
   const { hero, skills, history } = props
   return (
