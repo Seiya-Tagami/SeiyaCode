@@ -28,7 +28,8 @@ const Hero: FC<HeroProps> = (props) => {
         align='center'
         pos='absolute'
       >
-        <Heading as='h2' color='black' fontSize='4xl'>
+        <Heading as='h2' color='black' fontSize='4xl' bgGradient='linear(to-r, #4d2ea7, #000052)'
+          bgClip='text'>
           {hero.title}
         </Heading>
       </Flex>
