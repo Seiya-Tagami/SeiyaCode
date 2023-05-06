@@ -3,10 +3,12 @@ import React from 'react'
 import WorksContainer from 'components/Works/works.container'
 import Footer from 'components/common/Footer'
 import Header from 'components/common/Header'
+import Meta from 'components/common/Meta'
 
 const Works = () => {
   return (
     <>
+      <Meta title='Works' />
       <Header />
       <motion.div
         initial={{ opacity: 0 }}
