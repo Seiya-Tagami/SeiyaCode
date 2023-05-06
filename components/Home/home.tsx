@@ -10,12 +10,12 @@ import Hero from 'components/common/Hero'
 
 
 const Home: FC<HomeData> = (props) => {
-  const { hero, skills } = props
+  const { hero, skills, history } = props
   return (
     <Container maxW='container.md' pt='20'>
       <Hero hero={hero} />
       <About />
-      <History />
+      <History history={history} />
       <Skills skills={skills} />
       <FooterNav />
     </Container>

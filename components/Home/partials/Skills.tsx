@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 import { HomeData } from '../types'
 import SkillCard from './SkillCard'
 
-type SkillsProps = Omit<HomeData, 'hero'>
+type SkillsProps = Omit<HomeData, 'hero' | 'history'>
 const Skills: FC<SkillsProps> = (props) => {
   const { skills } = props;
   return (

@@ -1,8 +1,36 @@
+import { CheckCircleIcon, TriangleUpIcon } from '@chakra-ui/icons'
 export const HOME_DATA = {
   hero: {
     title: 'Seiya:Code',
     thumbnail: '/heros/home.jpg',
   },
+  history: [
+    {
+      date: "2022年4月",
+      text: "早稲田大学法学部に入学",
+      icon: CheckCircleIcon
+    },
+    {
+      date: "同年6月",
+      text: "サークルに所属し、プログラミングと出会う",
+      icon: CheckCircleIcon
+    },
+    {
+      date: "同年12月頃",
+      text: "HTML, CSS, JavaScript, PHPの基礎を習得",
+      icon: CheckCircleIcon
+    },
+    {
+      date: "2023年3月",
+      text: "技術力向上のため、エンジニア長期インターンに参加",
+      icon: CheckCircleIcon
+    },
+    {
+      date: "現在",
+      text: "Next.js、Nest.js, GraphQLを用いた、モダンな開発に挑戦中",
+      icon: TriangleUpIcon
+    },
+  ],
   skills: [
     {
       title: "Now learning",
@@ -20,8 +48,8 @@ export const HOME_DATA = {
       alt: "onceIHaveUsed"
     },
     {
-      title: "I wanna learn near future",
-      imgPath: "https://skillicons.dev/icons?i=rust,flutter,django,dotnet,postgres,aws,azure&perline=3",
+      title: "I'm interested in...",
+      imgPath: "https://skillicons.dev/icons?i=rust,go,flutter,dotnet,elixir,aws,azure&perline=3",
       alt: "nearFuture"
     },
     {
