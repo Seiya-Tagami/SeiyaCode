@@ -13,6 +13,12 @@ export const POSTS_DATA = {
           media: 'Qiita',
           url: 'https://qiita.com/st_274/items/e0ce8e14b0dab4d3669d',
         },
+        {
+          id: '2',
+          title: 'これは推せる!VSCode拡張機能5選',
+          media: 'Qiita',
+          url: 'https://qiita.com/st_274/items/ae487f1b10a613379a6f',
+        },
       ],
     },
     {

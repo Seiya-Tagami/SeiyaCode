@@ -15,7 +15,7 @@ const PostsPerMonth: FC<PostsPerMonthProps> = (props) => {
         <Box bg={'gray.300'} w={20} h={1}></Box>
       </Heading>
       <VStack w='full' mt='4'>
-        {post.articles.map((a) => (
+        {post.articles.reverse().map((a) => (
           <Article content={a} key={a.id} />
         ))}
       </VStack>
