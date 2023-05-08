@@ -27,7 +27,7 @@ export const HOME_DATA = {
     },
     {
       date: '現在',
-      text: 'Next.js、Nest.js, GraphQLを用いた、モダンな開発に挑戦中',
+      text: 'Next.js, Nest.js, GraphQLを用いた、モダンな開発に挑戦中',
       icon: TriangleUpIcon,
     },
   ],

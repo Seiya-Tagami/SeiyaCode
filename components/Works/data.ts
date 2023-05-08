@@ -5,6 +5,15 @@ export const WORKS_DATA = {
   },
   works: [
     {
+      id: '0',
+      title: 'todo-generator',
+      span: '2023/05',
+      desc: 'Qwik1.0がリリースされ、どんなフレームワークなのか触れてみたいと思い、このアプリケーションを開発してみました。自分のタスクがなくなって、もう何もすることがないという人におすすめです。',
+      stacks: 'Qwik City, Azure Cognitive Services Translator',
+      img_path: '/workCards/todo-generator.png',
+      product_url: 'https://todo-generator.vercel.app/',
+    },
+    {
       id: '1',
       title: 'portfolio',
       span: '2023/04~05',
@@ -16,7 +25,7 @@ export const WORKS_DATA = {
     {
       id: '2',
       title: 'Simple Memo',
-      span: '2023/03~04',
+      span: '2023/03~05',
       desc: 'シンプルで直感的な操作性を意識したメモアプリです。Nest.jsによるapi開発にも、初めて取り組んでみました。なお、Vercelにデプロイしているのは、フロントエンドのみで動作するものとなります。',
       stacks: 'Vue, TypeScript, Nest.js, Prisma',
       img_path: '/workCards/simple-memo.png',
