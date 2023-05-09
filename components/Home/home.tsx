@@ -1,11 +1,8 @@
 import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
-import About from './partials/About'
-import History from './partials/History'
-import Skills from './partials/Skills'
+import { Hero, FooterNav } from "../common/"
+import { About, History, Skills } from "./partials/index"
 import { HomeData } from './types'
-import FooterNav from 'components/common/FooterNav'
-import Hero from 'components/common/Hero'
 
 const Home: FC<HomeData> = (props) => {
   const { hero, skills, history } = props

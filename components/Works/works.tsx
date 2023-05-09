@@ -1,9 +1,8 @@
 import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
-import Hero from '../common/Hero'
+import { Hero, FooterNav } from "../common/"
 import WorkList from './partials/WorkList'
 import { WorksData } from './types'
-import FooterNav from 'components/common/FooterNav'
 
 const Works: FC<WorksData> = (props) => {
   const { hero, works } = props
