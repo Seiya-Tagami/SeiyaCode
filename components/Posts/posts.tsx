@@ -1,7 +1,7 @@
 import { Container } from '@chakra-ui/react'
 import React, { FC } from 'react'
 import { Hero, FooterNav } from "../common/"
-import PostsList from './partials/PostsList'
+import { PostsList } from './partials'
 import { PostsData } from './types'
 
 
