@@ -1,3 +1,5 @@
+# SeiyaCode
+
 ## 概要
 
 僕のあれこれを載せていきます。
@@ -11,7 +13,7 @@
 
 BaaS
 
-- supabase
+- Supabase
 
 ## デザインパターン
 
