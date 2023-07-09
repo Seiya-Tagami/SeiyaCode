@@ -1,3 +1,4 @@
+import { Image } from '@/components/libs/Image'
 import { Box, Heading, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper, useSteps, Text } from '@chakra-ui/react'
 import React, { FC } from 'react'
 
@@ -36,6 +37,11 @@ export const History: FC<any> = (props) => {
             <Box flexShrink='0' w={240}>
               <StepTitle>{step.title}</StepTitle>
               <StepDescription>{step.description}</StepDescription>
+              <Image
+                src={'https://skillicons.dev/icons?i=html,css,js,git&perline=4'}
+                width={160}
+                height={100}
+                alt='languages' />
             </Box>
 
             <StepSeparator />

@@ -26,7 +26,7 @@ export const Header = () => {
             </Heading>
           </Link>
           <ChakraLink href='https://github.com/Seiya-Tagami' title="seiya's github" isExternal>
-            <Image src={'github-mark.svg'} alt="github-mark" width={8} height={8} />
+            <Image src={'/github-mark.svg'} alt="github-mark" width={8} height={8} />
           </ChakraLink>
         </Flex>
       </Container>
