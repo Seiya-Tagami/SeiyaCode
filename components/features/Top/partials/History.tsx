@@ -1,21 +1,22 @@
 import { Image } from '@/components/libs/Image'
-import { Box, Heading, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper, useSteps, Text } from '@chakra-ui/react'
+import { Box, Heading, Step, StepDescription, StepIcon, StepIndicator, StepNumber, StepSeparator, StepStatus, StepTitle, Stepper, useSteps } from '@chakra-ui/react'
 import React, { FC } from 'react'
 
-const steps = [
-  { title: '大学1年6月～', description: '大学生プログラミングサークルに入り、フロントエンドから学び始めました。チームでのハッカソンも2度参加しました。' },
-  { title: 'Second', description: 'Date & Time' },
-  { title: 'Third', description: 'Select Rooms' },
-  { title: 'Third', description: 'Select Rooms' },
-]
-
-// type HistoryProps = Omit<HomeData, 'hero' | 'skills'>
-export const History: FC<any> = (props) => {
-  // const { steps } = props
+type HistoryProps = {
+  content: {
+    history_id: string
+    title: string
+    description: string
+    img_url: string
+    created_at: string
+  }[]
+}
+export const History: FC<HistoryProps> = (props) => {
+  const { content } = props
 
   const { activeStep } = useSteps({
-    index: steps.length - 1,
-    count: steps.length,
+    index: content.length - 1,
+    count: content.length,
   })
 
   return (
@@ -23,30 +24,31 @@ export const History: FC<any> = (props) => {
       <Heading as='h2' fontSize='2xl'>
         やってきたこと🐳
       </Heading>
-      <Stepper index={activeStep} minHeight={140 * steps.length} mt={8} p={4} bg={'gray.100'} colorScheme={'green'} orientation='vertical' gap='0' rounded={'lg'}>
-        {steps.map((step, index) => (
-          <Step key={index}>
-            <StepIndicator>
-              <StepStatus
-                complete={<StepIcon />}
-                incomplete={<StepNumber />}
-                active={<StepNumber />}
-              />
-            </StepIndicator>
+      <Stepper index={activeStep} minHeight={140 * content.length} mt={8} p={4} bg={'gray.100'} colorScheme={'green'} orientation='vertical' gap='0' rounded={'lg'}>
+        {content.length ?
+          content.map((step, index) => (
+            <Step key={index}>
+              <StepIndicator>
+                <StepStatus
+                  complete={<StepIcon />}
+                  incomplete={<StepNumber />}
+                  active={<StepNumber />}
+                />
+              </StepIndicator>
 
-            <Box flexShrink='0' w={240}>
-              <StepTitle>{step.title}</StepTitle>
-              <StepDescription>{step.description}</StepDescription>
-              <Image
-                src={'https://skillicons.dev/icons?i=html,css,js,git&perline=4'}
-                width={160}
-                height={100}
-                alt='languages' />
-            </Box>
+              <Box flexShrink='0' w={[240, 360]}>
+                <StepTitle>{step.title}</StepTitle>
+                <StepDescription>{step.description}</StepDescription>
+                <Image
+                  src={step.img_url}
+                  width={160}
+                  height={100}
+                  alt='languages' />
+              </Box>
 
-            <StepSeparator />
-          </Step>
-        ))}
+              <StepSeparator />
+            </Step>
+          )) : 'Sorry... No data fetched'}
       </Stepper>
     </Box>
   )

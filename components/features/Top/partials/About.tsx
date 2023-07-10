@@ -1,5 +1,3 @@
-'use client'
-
 import { Image } from '@/components/libs/Image'
 import { Box, Flex, Link, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
