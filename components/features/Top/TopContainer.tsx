@@ -1,13 +1,11 @@
 'use client'
 
-import { Top } from "./Top"
-import { supabase } from "@/config/supabase"
+import { Top } from './Top'
+import { supabase } from '@/config/supabase'
 
 export const historyQueryData = async () => {
   try {
-    const { data, error } = await supabase
-      .from('history')
-      .select('*')
+    const { data, error } = await supabase.from('history').select('*')
     if (error) throw error
     return data
   } catch (e) {

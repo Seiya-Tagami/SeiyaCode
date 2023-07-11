@@ -1,2 +1,4 @@
-export { Header } from './Header'
-export { Footer } from "./Footer"
+'use client'
+
+export * from './Header'
+export * from './Footer'
