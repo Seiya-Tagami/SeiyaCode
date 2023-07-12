@@ -1,5 +1,14 @@
 import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+import timezone from 'dayjs/plugin/timezone'
+import 'dayjs/locale/ja'
+
 import { THistory, TRecentActivity } from '../features/Top/partials'
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.tz.setDefault('Asia/Tokyo')
+dayjs.locale('ja')
 
 export const format1 = (v: string | Date) => {
   const date = dayjs(v).format('YYYY/MM')
