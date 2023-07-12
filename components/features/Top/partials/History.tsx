@@ -1,6 +1,9 @@
 import { Image } from '@/components/libs/Image'
+import { sortByDate } from '@/components/libs/dayjs'
 import {
   Box,
+  Card,
+  CardBody,
   Heading,
   Step,
   StepDescription,
@@ -15,14 +18,17 @@ import {
 } from '@chakra-ui/react'
 import React, { FC } from 'react'
 
+export type THistory = {
+  history_id: string
+  title: string
+  description: string
+  img_url: string
+  start_date: string
+  created_at: string
+}
+
 type HistoryProps = {
-  content: {
-    history_id: string
-    title: string
-    description: string
-    img_url: string
-    created_at: string
-  }[]
+  content: THistory[]
 }
 export const History: FC<HistoryProps> = (props) => {
   const { content } = props
@@ -35,41 +41,41 @@ export const History: FC<HistoryProps> = (props) => {
   return (
     <Box mt={10}>
       <Heading as='h2' fontSize='2xl'>
-        やってきたこと🐳
+        🐳やってきたこと
       </Heading>
-      <Stepper
-        index={activeStep}
-        minHeight={140 * content.length}
-        mt={8}
-        p={4}
-        bg={'gray.100'}
-        colorScheme={'green'}
-        orientation='vertical'
-        gap='0'
-        rounded={'lg'}
-      >
-        {content.length
-          ? content.map((step, index) => (
-              <Step key={index}>
-                <StepIndicator>
-                  <StepStatus
-                    complete={<StepIcon />}
-                    incomplete={<StepNumber />}
-                    active={<StepNumber />}
-                  />
-                </StepIndicator>
+      <Card size={'md'} mt={8} bg={'gray.100'}>
+        <CardBody>
+          <Stepper
+            index={activeStep}
+            minHeight={140 * content.length}
+            colorScheme={'green'}
+            orientation='vertical'
+            gap='0'
+          >
+            {content.length
+              ? sortByDate<THistory>(content).map((step, index) => (
+                  <Step key={index}>
+                    <StepIndicator>
+                      <StepStatus
+                        complete={<StepIcon />}
+                        incomplete={<StepNumber />}
+                        active={<StepNumber />}
+                      />
+                    </StepIndicator>
 
-                <Box flexShrink='0' w={[240, 360]}>
-                  <StepTitle>{step.title}</StepTitle>
-                  <StepDescription>{step.description}</StepDescription>
-                  <Image src={step.img_url} width={160} height={100} alt='languages' />
-                </Box>
+                    <Box flexShrink='0' w={[240, 360]}>
+                      <StepTitle>{step.title}</StepTitle>
+                      <StepDescription>{step.description}</StepDescription>
+                      <Image src={step.img_url} width={160} height={100} alt='languages' />
+                    </Box>
 
-                <StepSeparator />
-              </Step>
-            ))
-          : 'Sorry... No data fetched'}
-      </Stepper>
+                    <StepSeparator />
+                  </Step>
+                ))
+              : 'Sorry... No data fetched'}
+          </Stepper>
+        </CardBody>
+      </Card>
     </Box>
   )
 }

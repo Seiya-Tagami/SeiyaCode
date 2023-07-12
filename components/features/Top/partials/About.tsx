@@ -8,13 +8,13 @@ export const About = () => {
       <VStack>
         <Image
           src='/top/about.png'
-          width={160}
-          height={160}
+          width={170}
+          height={170}
           alt='自画像'
           roundedTopLeft={'2xl'}
           roundedBottomRight={'2xl'}
         />
-        <Box py={8}>
+        <Box p={8}>
           <Text as={'b'} fontSize='2xl'>
             田上誠也 | Seiya TAGAMI
           </Text>

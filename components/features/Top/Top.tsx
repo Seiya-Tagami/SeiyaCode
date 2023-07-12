@@ -1,7 +1,7 @@
 'use client'
 
 import { Container } from '@chakra-ui/react'
-import { About, History } from './partials'
+import { About, History, RecentActivity } from './partials'
 import { FC } from 'react'
 
 type TopProps = {
@@ -18,9 +18,10 @@ export const Top: FC<TopProps> = (props) => {
       {/* about me */}
       <About />
 
-      {/* my recent activity */}
+      {/* recent activity */}
+      <RecentActivity content={content.recentActivity} />
 
-      {/* my history */}
+      {/* history */}
       <History content={content.history} />
 
       {/* my favorite books */}

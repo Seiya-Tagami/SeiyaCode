@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     dangerouslyAllowSVG: true,
-    domains: ['skillicons.dev'],
+    domains: ['skillicons.dev', 'avatars.githubusercontent.com'],
   },
 }
 
